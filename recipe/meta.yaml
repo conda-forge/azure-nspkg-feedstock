@@ -7,7 +7,7 @@ package:
 source:
   fn: azure-nspkg-{{ version }}.zip
   url: https://pypi.io/packages/source/a/azure-nspkg/azure-nspkg-{{ version }}.zip
-  md5: cb046beb44c3efdb8bf1688af6c011ca
+  md5: fe19ee5d8c66ee8ef62557fc7310f59cffb7230f0a94701eef79f6e3191fdc7b
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
