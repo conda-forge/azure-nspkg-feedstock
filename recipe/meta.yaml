@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: azure-nspkg
@@ -7,7 +7,7 @@ package:
 source:
   fn: azure-nspkg-{{ version }}.zip
   url: https://pypi.io/packages/source/a/azure-nspkg/azure-nspkg-{{ version }}.zip
-  md5: cb046beb44c3efdb8bf1688af6c011ca
+  md5: 2507ef1bf59830773a4a6534d4f6b314
   
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
