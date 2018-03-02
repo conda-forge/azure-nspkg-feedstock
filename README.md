@@ -14,9 +14,7 @@ Summary: Microsoft Azure Namespace Package [Internal]
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/azure-nspkg-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-nspkg-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/azure-nspkg-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/azure-nspkg-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/azure-nspkg-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/azure-nspkg-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/azure-nspkg-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/azure-nspkg-feedstock)
 
 Current release info
 ====================
