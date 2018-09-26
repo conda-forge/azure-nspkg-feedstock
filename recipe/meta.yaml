@@ -1,6 +1,6 @@
 {% set name = "azure-nspkg" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "fe19ee5d8c66ee8ef62557fc7310f59cffb7230f0a94701eef79f6e3191fdc7b" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "08c0c8a236616323ca72d566119e1614f4fa2f6ada420c8f5a5afb2fcaec18f5" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
