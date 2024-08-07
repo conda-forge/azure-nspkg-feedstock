@@ -1,39 +1,42 @@
 {% set name = "azure-nspkg" %}
 {% set version = "3.0.2" %}
-{% set sha256 = "e7d3cea6af63e667d87ba1ca4f8cd7cb4dfca678e4c55fc1cedb320760e39dd0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-nspkg-{{ version }}.zip
+  sha256: e7d3cea6af63e667d87ba1ca4f8cd7cb4dfca678e4c55fc1cedb320760e39dd0
 
 build:
-  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.4
+    - pip
     - setuptools
-    - pip  
   run:
-    - python
-    - setuptools
+    - python >=3.4
 
 test:
   imports:
-    - azure
+    - azure_nspkg
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Azure/azure-sdk-for-python
-  license: Apache-2.0
-  summary: 'Microsoft Azure Namespace Package [Internal]'
+  summary: Microsoft Azure Namespace Package [Internal]
+  license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - Maxyme
+    - xylar
