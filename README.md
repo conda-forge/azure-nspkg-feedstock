@@ -7,6 +7,8 @@ Home: https://github.com/Azure/azure-sdk-for-python
 
 Package license: MIT
 
+Summary: Microsoft Azure Namespace Package -- Internal
+
 Current build status
 ====================
 
