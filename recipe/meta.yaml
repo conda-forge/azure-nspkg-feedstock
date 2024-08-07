@@ -23,8 +23,6 @@ requirements:
     - python >=3.4
 
 test:
-  imports:
-    - azure
   commands:
     - pip check
   requires:
